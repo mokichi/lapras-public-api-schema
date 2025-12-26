@@ -20,6 +20,7 @@ GET https://lapras.com/public/<:share_id>.json
 | e_score | number | 技術力スコア | `3.4` ※ scoreが計算不可能な場合は0が返ります。 |
 | b_score | number  | ビジネス力スコア | `3.1` |
 | i_score | number | 影響力スコア | `2.2` |
+| iconimage_url | string | ユーザーのアイコン画像のURL | `"https://placehold.co/300x300.jpg"` |
 | qiita_articles | arrary | Qiita記事 | `[{"title": "hogehoge", "url": "https://qiita.com/hogehoge"}, "tags" ["foo"], "headlines": ["bar"], "stockers_count": 3, "updated_at": "020-07-26T08:10:11"]` |
 | zenn_articles | array  | Zenn記事 | `[{"title": "hoge", "url": "https://zenn.dev/hoge", "tags": ["foo"], "posted_at": "2022-10-03T08:36:43"}]`  |
 | blog_articles | array | ブログ記事 | `[{"title": "hoge", "url": "https://blog.com/hoge", "tags": ["foo"], "posted_at": "2022-10-03T08:36:43"}]` |
@@ -40,6 +41,7 @@ type Response = {
   e_score: number; // 技術力スコア,
   b_score: number; // ビジネス力スコア,
   i_score: number; // 影響力スコア,
+  iconimage_url: string; // ユーザーのアイコン画像のURL,
   qiita_articles: { // Qiita記事
     title: string;
     url: string;
