@@ -53,6 +53,7 @@ components:
           e_score: 3
           b_score: 3
           i_score: 3
+          iconimage_url: https://placehold.co/300x300.jpg
           activities:
             - date: '2019-08-24T14:15:22Z'
               title: string
@@ -165,6 +166,10 @@ components:
           maximum: 5
           minimum: 0
           description: LAPRAS Influence score.
+        iconimage_url:
+          type: string
+          format: uri
+          description: User's icon image URL.
         activities:
           type: array
           items:
